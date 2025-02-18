@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1bb3e11e725b97a40884532b8c5428ff
+guid: 00b592bd709247549924d372c8bc4923
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7024057930177573888
-    second: fence 1_0
+      213: -62185345562738595
+    second: GROUND_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fence 1_0
+      name: GROUND_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 67
-        width: 109
-        height: 31
+        y: 0
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 004fff1f8777a7160800000000000000
-      internalID: 7024057930177573888
+      spriteID: d508f77f1c2132ff0800000000000000
+      internalID: -62185345562738595
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fence 1_0: 7024057930177573888
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

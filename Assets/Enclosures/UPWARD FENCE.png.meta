@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f78a77809d4ba4c409424c1bcc903760
+guid: 8e4b7666e779cb64e9823a083c41bc1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -559447297435584840
-    second: ZOO_PENGUIN_2_0
+      213: -8205640876333179796
+    second: UPWARD FENCE_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ZOO_PENGUIN_2_0
+      name: UPWARD FENCE_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 12
-        width: 16
-        height: 25
+        x: 0
+        y: 0
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b6bcc5a5a17c38f0800000000000000
-      internalID: -559447297435584840
+      spriteID: c6c5cbb2915bf1e80800000000000000
+      internalID: -8205640876333179796
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UPWARD FENCE_0: -8205640876333179796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
