@@ -4,7 +4,8 @@ public class Movement : MonoBehaviour
 {
 
 
-    float moveSpeed = 35.0f;
+    float moveSpeed = 50.0f;
+    
 
 
     void Start()
