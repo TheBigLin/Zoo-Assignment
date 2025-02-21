@@ -11,7 +11,7 @@ public abstract class Animal
     public float thirst = 0.0f;
 }
 
-public class Goat : Animal
+public class Goat : Animal, IInteractable, IFeed
 {
     public override float Hunger()
     {
@@ -33,11 +33,22 @@ public class Goat : Animal
     }
 
     public float destoryenemies;
+    public float poop;
+
+    public void Interact()
+    {
+        Debug.Log("goat faints and falls over");
+    }
+
+    public void Feed()
+    {
+        Debug.Log("Munch Munch Munch");
+    }
 
     
 }
 
-public class Camel : Animal
+public class Camel : Animal, IInteractable, IFeed
 {
     public override float Hunger()
     {
@@ -58,9 +69,18 @@ public class Camel : Animal
     }
 
     public float storewater;
+
+    public void Interact()
+    {
+        Debug.Log("Gave Camel Water");
+    }
+    public void Feed()
+    {
+        Debug.Log("Slurp slurp");
+    }
 }
 
-public class Penguin : Animal
+public class Penguin : Animal, IInteractable, IFeed
 {
     public override float Hunger()
     {
@@ -80,9 +100,19 @@ public class Penguin : Animal
     {
         Debug.Log("Don't mind me sliding past ya");
     }
+    public float Kowaslkianalysis; // shoutout the madagascar movie. 
+
+    public void Interact()
+    {
+        Debug.Log("Give penguin water");
+    }
+    public void Feed()
+    {
+        Debug.Log("rips fish in half");
+    }
 }
 
-public class Horse : Animal
+public class Horse : Animal, IInteractable, IFeed
 {
     public override float Hunger()
     {
@@ -109,4 +139,14 @@ public class Horse : Animal
     }
 
     public float eathay;
+    public float racing; 
+
+    public void Interact()
+    {
+        Debug.Log("Give horse a apple");
+    }
+    public void Feed()
+    {
+        Debug.Log("the horse starts munching on the apple");
+    }
 }
