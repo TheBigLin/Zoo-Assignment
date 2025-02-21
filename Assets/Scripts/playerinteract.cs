@@ -4,7 +4,7 @@ using Yarn.Unity;
 public class playerinteract : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
-    public SignInteract interact;
+    public SignInteract Interact;
     public Movement movement;
 
     public void Start()
@@ -17,28 +17,28 @@ public class playerinteract : MonoBehaviour
 
     public void Update()
     {
-        if (interact != null && Input.GetKeyDown(KeyCode.E))
+        if (Interact != null && Input.GetKeyDown(KeyCode.E))
         {
             if (!dialogueRunner.IsDialogueRunning)
             {
-                dialogueRunner.StartDialogue(interact.dialogueNode);
+                dialogueRunner.StartDialogue(Interact.dialogueNode);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out interact.interactable))
+        if (collision.gameObject.TryGetComponent(out Interact interactable))
         {
-            interact = interactable;
+            Interact = interactable;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == interact?.gameObject)
+        if (collision.gameObject == Interact?.gameObject)
         {
-            interact = null;
+            Interact = null;
         }
     }
 
