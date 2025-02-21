@@ -1,7 +1,7 @@
 using UnityEngine;
 using Yarn.Unity;
 
-public class CamelInteract : MonoBehaviour
+public class CamelStart : MonoBehaviour
 {
     //refernece our runner
     public DialogueRunner dialogueRunner;
@@ -23,14 +23,7 @@ public class CamelInteract : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
-    {
-        if (inzonetospeak && Input.GetKeyDown(KeyCode.E))
-        {
-            dialogueRunner.StartDialogue(NodeName);
-        }
 
-    }
 
 
     // TODO - use autocomplete to type this for you with correct syntax
@@ -49,7 +42,18 @@ public class CamelInteract : MonoBehaviour
                 inzonetospeak = false;
             }
 
+
+            void Update()
+            {
+                if (inzonetospeak && Input.GetKeyDown(KeyCode.E))
+                {
+                    dialogueRunner.StartDialogue(NodeName);
+                }
+
+
+            }
         }
     }
 }
+ 
 
