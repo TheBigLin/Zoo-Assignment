@@ -1,5 +1,5 @@
 using UnityEngine;
-using Yarn.unity
+using Yarn.unity;
 public class CamelInteract : MonoBehaviour
 {
     // refernece our runner
