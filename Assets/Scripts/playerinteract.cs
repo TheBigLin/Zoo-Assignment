@@ -7,7 +7,7 @@ public class playerinteract : MonoBehaviour
     public SignInteract interact;
     public Movement movement;
 
-    private void Start()
+    public void Start()
     {
         movement = GetComponent<Movement>();
 
@@ -15,7 +15,7 @@ public class playerinteract : MonoBehaviour
         dialogueRunner.onDialogueComplete.AddListener(EnableMovement);
     }
 
-    private void Update()
+    public void Update()
     {
         if (interact != null && Input.GetKeyDown(KeyCode.E))
         {
