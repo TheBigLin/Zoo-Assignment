@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour, IInteractable
+public class Movement : IInteractable
 {
 
 
@@ -38,40 +38,5 @@ public class Movement : MonoBehaviour, IInteractable
 
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
     }
 }
