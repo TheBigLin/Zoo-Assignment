@@ -54,3 +54,47 @@ public class Camel : Animal
     }
 }
 
+public class Penguin : Animal
+{
+    public override float Hunger()
+    {
+        return (hunger) + 50.0f;
+    }
+
+    public override float Energy()
+    {
+        return (energy) + 100.0f;
+    }
+    public override float Thirst()
+    {
+        return (thirst) + 75.0f;
+    }
+
+    public void Slide()
+    {
+        Debug.Log("Don't mind me sliding past ya");
+    }
+}
+
+public class Horse : Animal
+{
+    public override float Hunger()
+    {
+        return (hunger) + 100.0f;
+    }
+
+    public override float Energy()
+    {
+        return (energy) + 100.0f;
+    }
+    public override float Thirst()
+    {
+        return (thirst) + 50.0f;
+    }
+
+    public void Scream()
+    {
+        Debug.Log("NEIGH");
+    }
+
+}
