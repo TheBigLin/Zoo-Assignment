@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour, IInteractable;
 {
 
 
@@ -16,8 +16,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-  float dt = Time.deltaTime;
+
+        float dt = Time.deltaTime;
         Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
         {
@@ -35,9 +35,46 @@ public class Movement : MonoBehaviour
         {
             direction += Vector2.right;
         }
-       
+
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
+    }
+
+    public void (GivePenguinFish);
+    {
+        private void GivePenguinFish()
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
