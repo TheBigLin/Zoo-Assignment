@@ -1,10 +1,15 @@
-﻿title: TalkToCamels
+﻿
+
+
+
+title: CamelStart
+
 tags:
 ---
 GIVE APPLE?
 -> YES!
 	<<jump camelfeed>>
--> NO :(
+-> NO 
 ===
 
 title: camelfeed
