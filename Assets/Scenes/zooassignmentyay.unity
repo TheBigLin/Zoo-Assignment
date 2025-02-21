@@ -4845,7 +4845,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3729209711652782526, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
-<<<<<<< Updated upstream
       propertyPath: m_Size.x
       value: 0.4766819
       objectReference: {fileID: 0}
@@ -4862,8 +4861,6 @@ PrefabInstance:
       value: -0.005835563
       objectReference: {fileID: 0}
     - target: {fileID: 3729209711652782526, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
-=======
->>>>>>> Stashed changes
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
