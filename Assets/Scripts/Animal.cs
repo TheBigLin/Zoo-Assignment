@@ -31,6 +31,10 @@ public class Goat : Animal
     {
         Debug.Log("AHHH-...");
     }
+
+    public float destoryenemies;
+
+    
 }
 
 public class Camel : Animal
@@ -52,6 +56,8 @@ public class Camel : Animal
     {
        Debug.Log("I love water. I'm literally full of it");
     }
+
+    public float storewater;
 }
 
 public class Penguin : Animal
@@ -97,4 +103,10 @@ public class Horse : Animal
         Debug.Log("NEIGH");
     }
 
+    public Quaternion Rotategalloping()
+    {
+        return Quaternion.Euler(5.0f, 0.7f, 420.0f);
+    }
+
+    public float eathay;
 }
