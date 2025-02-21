@@ -1,19 +1,16 @@
 using UnityEngine;
-using Yarn.unity;
- // public class CamelInteract : MonoBehaviour
+//using Yarn.unity;
+
+public class CamelInteract : MonoBehaviour
 {
     // refernece our runner
-  // public DialogueRunner dialogueRunner;
-
-   
-    
+    //public DialogueRunner dialogueRunner;
 
     // boolean that determines if within the range in which the yarn script can be activated.
-    private bool = inzonetospeak = false;
+    private bool inzonetospeak = false;
 
-
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+    void CamelInteractionVoid()
     {
         if (inzonetospeak && Input.GetKeyDown(KeyCode.E))
         {
@@ -22,25 +19,24 @@ using Yarn.unity;
 
     }
     // start the dialogue runner based on name
-    private void TalkToCamel();
+    void TalkToCamel()
     {
-    if (inzonetospeak != null)
-    {
-        dialogueRunner.StartDialogue(TalkToCamel);
+        if (inzonetospeak != null)
+        {
+            //dialogueRunner.StartDialogue(TalkToCamel);
+        }
     }
 
-private void OnTriggerEnter(BoxCollider2D)
-{
-    if (other.CompareTag("Player"))
-    {
-        inzonetospeak = true;
-    }
-    if (other.CompareTag("Player"))
-    {
-        inzonetospeak = false;
-    }
-
-
-
-
+    // TODO - use autocomplete to type this for you with correct syntax
+    //void OnTriggerEnter2D(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        inzonetospeak = true;
+    //    }
+    //    else (other.CompareTag("Player"))
+    //    {
+    //        inzonetospeak = false;
+    //    }
+    //}
 }
