@@ -1,9 +1,9 @@
 using UnityEngine;
 using Yarn.unity;
-public class CamelInteract : MonoBehaviour
+ // public class CamelInteract : MonoBehaviour
 {
     // refernece our runner
-    public DialogueRunner dialogueRunner;
+  // public DialogueRunner dialogueRunner;
 
    
     

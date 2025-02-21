@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 13964, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EnablePreReleasePackages: 0
+  m_EnablePreReleasePackages: 1
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
   m_SeeAllPackageVersions: 0
   m_DismissPreviewPackagesInUse: 0
-  oneTimeWarningShown: 0
+  oneTimeWarningShown: 1
   oneTimeDeprecatedPopUpShown: 0
   m_Registries:
   - m_Id: main
@@ -38,8 +38,11 @@ MonoBehaviour:
   m_UserSelectedRegistryName: OpenUPM
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
-    m_Modified: 0
-    m_ErrorMessage: 
-    m_UserModificationsInstanceId: -864
-    m_OriginalInstanceId: -866
+    m_Modified: 1
+    m_ErrorMessage: "Unable to remove scoped registry with id \"scoped:project:OpenUPM\":\n 
+      The file [C:\\Users\\200616373\\Documents\\GitHub\\Zoo-Assignment\\Packages\\packages-lock.json]
+      is not valid JSON:\n    Unexpected string in JSON at position 1169 while parsing
+      '{\r\n      \"dependencies\": {\r\n        \"com.unity.2'"
+    m_UserModificationsInstanceId: -870
+    m_OriginalInstanceId: -874
   m_LoadAssets: 0
