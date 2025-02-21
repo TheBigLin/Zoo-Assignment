@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour, IInteractable;
+public class Movement : MonoBehaviour, IInteractable
 {
 
 
@@ -40,10 +40,18 @@ public class Movement : MonoBehaviour, IInteractable;
         transform.position += movement;
     }
 
-    public void (GivePenguinFish);
-    {
-        private void GivePenguinFish()
-    }
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -64,18 +72,6 @@ public class Movement : MonoBehaviour, IInteractable;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+     
     }
 }
