@@ -1,0 +1,15 @@
+﻿title: TalkToCamels
+tags:
+---
+GIVE APPLE?
+-> YES!
+	<<jump camelfeed>>
+-> NO :(
+===
+
+title: camelfeed
+---
+CAMEL: om nom nom
+===
+
+
