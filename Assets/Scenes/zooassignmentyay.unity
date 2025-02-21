@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 959925489}
   m_Layer: 0
   m_Name: ZOOKEEPER
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,6 +3196,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.09, y: 0.2999125}
   m_EdgeRadius: 0
+--- !u!1 &1524673524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524673525}
+  m_Layer: 0
+  m_Name: CamelObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1524673525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524673524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.14815, y: -26.99352, z: -1.2288508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546557447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,6 +4845,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3729209711652782526, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
+<<<<<<< Updated upstream
       propertyPath: m_Size.x
       value: 0.4766819
       objectReference: {fileID: 0}
@@ -4830,6 +4862,8 @@ PrefabInstance:
       value: -0.005835563
       objectReference: {fileID: 0}
     - target: {fileID: 3729209711652782526, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
+=======
+>>>>>>> Stashed changes
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -4909,3 +4943,4 @@ SceneRoots:
   - {fileID: 1225906289}
   - {fileID: 329681075}
   - {fileID: 959925488}
+  - {fileID: 1524673525}
