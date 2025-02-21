@@ -16,22 +16,16 @@ public class CAMELSTARTER : MonoBehaviour
 
     {
 
-        dialogueRunner = FindObjectOfType<DialogueRunner>();
+        dialogueRunner = Object.FindAnyObjectByType<DialogueRunner>();
     }
 
-    void Update()
-    {
-        if (inzonetospeak && Input.GetKeyDown(KeyCode.E))
-        {
-            dialogueRunner.StartDialogue(NodeName);
-        }
-
+    
 
         // Update is called once per frame
 
 
 
-        // TODO - use autocomplete to type this for you with correct syntax
+      
         void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
@@ -47,6 +41,12 @@ public class CAMELSTARTER : MonoBehaviour
                     inzonetospeak = false;
                 }
 
+            void Update()
+            {
+                if (inzonetospeak && Input.GetKeyDown(KeyCode.E))
+                {
+                    dialogueRunner.StartDialogue(NodeName);
+                }
 
 
 
