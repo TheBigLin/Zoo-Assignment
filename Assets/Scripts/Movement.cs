@@ -17,7 +17,7 @@ public class Movement
 
 
 
- }
+ 
     private bool canSelect = false;
     private IInteractable ChosenAnimal;
 
@@ -104,7 +104,7 @@ public class Movement
             canSelect = true;
         }
     }
-}
+
 
         
 
