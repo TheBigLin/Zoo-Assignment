@@ -43,7 +43,7 @@ public class Movement : IInteractable
 
         if (WhichZooAnimal == Camel)
         {
-           interact();
+           Interact();
         }
         else if (WhichZooAnimal == Horse)
         {
@@ -63,22 +63,4 @@ public class Movement : IInteractable
         
         
     }
-} 
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
