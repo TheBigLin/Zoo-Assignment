@@ -1,15 +1,19 @@
 using UnityEngine;
 
-public class Movement 
+public class Movement
 {
 
-    public GameObject ZOO_GOAT;
-    public GameObject ZOO_HORSE;
-    public GameObject ZOO_CAMEL;
-    public GameObject ZOO_PENGUIN;
+    public GameObject GOAT;
+    public GameObject HORSE;
+    public GameObject CAMEL;
+    public GameObject PENGUIN;
     float moveSpeed = 50.0f;
 
 
+
+
+    private bool canSelect = false;
+    private IInteractable ChosenAnimal;
 
     void Start()
     {
@@ -19,8 +23,8 @@ public class Movement
     // Update is called once per frame
     void Update()
     {
-            public string WhichZooAnimal;
-         float dt = Time.deltaTime;
+        //     public string WhichZooAnimal;
+        float dt = Time.deltaTime;
         Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
         {
@@ -43,32 +47,41 @@ public class Movement
         transform.position += movement;
 
 
-    if (WhichZooAnimal == Camel);
+
+        if (canSelect && Input.GetKeyDown(KeyCode.E) && ChosenAnimal != null)
         {
-    interact()
+            ChosenAnimal.Interact();
+        }
     }
-    else if (WhichZooAnimal == Horse);
+
+
+    void OnTriggerEnter2D(Collider2D other)
     {
 
-    }
-     else if (WhichZooAnimal == Penguin);
-    {
-
-    }
-    else (WhichZooAnimal == Goat);
-    {
-
-    }
-
-
-
-
-
-
+        if (other.gameObject == GOAT)
+        {
+            ChosenAnimal = GOAT.GetComponent<IInteractable>();
+            canSelect = true;
+        }
+        else if (other.gameObject == HORSE)
+        {
+            ChosenAnimal = HORSE.GetComponent<IInteractable>();
+            canSelect = true;
+        }
+        else if (other.gameObject == CAMEL)
+        {
+            ChosenAnimal = CAMEL.GetComponent<IInteractable>();
+            canSelect = true;
+        }
+        else if (other.gameObject == PENGUIN)
+        {
+            ChosenAnimal = PENGUIN.GetComponent<IInteractable>();
+            canSelect = true;
+        }
     }
 }
 
-      
+
 
 
 
