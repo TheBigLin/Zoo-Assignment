@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : IInteractable
+public class Movement : MonoBehaviour //IInteractable
 {
 
     public GameObject Goat;
@@ -10,8 +10,8 @@ public class Movement : IInteractable
     float moveSpeed = 50.0f;
 
     public string WhichZooAnimal;
-    
     Vector2 direction = Vector2.zero;
+    float dt;
    
 
     void Start()
@@ -43,34 +43,32 @@ public class Movement : IInteractable
         }
 
 
-      if (WhichZooAnimal == CAMEL)
-      {
-         void Interact()
-          {
-              Debug.Log("TestTEst");
-          }
-      }
-      else if (WhichZooAnimal == HORSE)
-      {
-         void Interact()
-         {
-           Debug.Log("Test2");
-         }
-      }
-      else if (WhichZooAnimal == PENGUIN)
-      {
-          void Interact()
-          {
-            Debug.Log("test3");
-          }
-      }
-      else if (WhichZooAnimal == GOAT)
-      {
-          void Interact()
-          {
-              Debug.Log("test4");
-          }
-      }
+    //if (WhichZooAnimal == "Camel")
+    //{
+    //      Interact("Camel");
+    //}
+    //else if (WhichZooAnimal == "Horse")
+    //{
+    //      Interact("Horse");
+    //}
+    //else if (WhichZooAnimal == "Penguin")
+    //{
+    //      Interact("Penguin");
+    //}
+    //else if (WhichZooAnimal == "Goat")
+    //{
+    //      Interact("goat");
+    //}
+    //
+    //void Interact()
+    //{
+    //  Debug.Log("Interacting with " + WhichZooAnimal);
+    //}
+    //
+    //void Interact(string animal)
+    //  {
+    //      Debug.Log("Interacting with " + animal);
+    // }
         
         
     }
