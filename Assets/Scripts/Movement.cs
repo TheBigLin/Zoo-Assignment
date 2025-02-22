@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : IInteractable
 {
 
     public GameObject Goat;
@@ -46,22 +46,22 @@ public class Movement : MonoBehaviour
         }
 
 
-       //if (WhichZooAnimal == CAMEL)
-       //{
-       //  // Interact();
-       //}
-       //else if (WhichZooAnimal == HORSE)
-       //{
-       //   // Interact();
-       //}
-       //else if (WhichZooAnimal == PENGUIN)
-       //{
-       //    //Interact();
-       //}
-       //else if (WhichZooAnimal == GOAT)
-       //{
-       //    //Interact();
-       //}
+      if (WhichZooAnimal == CAMEL)
+      {
+         Interact();
+      }
+      else if (WhichZooAnimal == HORSE)
+      {
+          Interact();
+      }
+      else if (WhichZooAnimal == PENGUIN)
+      {
+          Interact();
+      }
+      else if (WhichZooAnimal == GOAT)
+      {
+          Interact();
+      }
         
         
     }
