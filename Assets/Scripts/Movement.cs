@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement
+public class Movement : IInteractable
 {
 
     public GameObject ZOO_GOAT;
@@ -10,13 +10,15 @@ public class Movement
     float moveSpeed = 50.0f;
 
     public string WhichZooAnimal;
-   
+    float dt = Time.deltaTime;
+    Vector2 direction = Vector2.zero;
+
 
 
 
     void Start()
     {
-
+     
     }
     void Update()
     {
@@ -41,7 +43,7 @@ public class Movement
 
         if (WhichZooAnimal == Camel)
         {
-            interact();
+           interact();
         }
         else if (WhichZooAnimal == Horse)
         {
@@ -58,10 +60,8 @@ public class Movement
 
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
-
-         public string WhichZooAnimal;
-         float dt = Time.deltaTime;
-         Vec2 direction = Vec2.zero;
+        
+        
     }
 } 
 
