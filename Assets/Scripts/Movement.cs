@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class Movement : IInteractable
+public class Movement 
 {
 
-
+    public GameObject ZOO_GOAT;
+    public GameObject ZOO_HORSE;
+    public GameObject ZOO_CAMEL;
+    public GameObject ZOO_PENGUIN;
     float moveSpeed = 50.0f;
-    
+
 
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -38,5 +41,24 @@ public class Movement : IInteractable
 
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
+
+    
     }
 }
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
