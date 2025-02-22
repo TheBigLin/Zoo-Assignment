@@ -12,9 +12,6 @@ public class Movement : IInteractable
     public string WhichZooAnimal;
     
     Vector2 direction = Vector2.zero;
-
-
-
    
 
     void Start()
@@ -48,19 +45,31 @@ public class Movement : IInteractable
 
       if (WhichZooAnimal == CAMEL)
       {
-         Interact();
+         void Interact()
+          {
+              Debug.Log("TestTEst");
+          }
       }
       else if (WhichZooAnimal == HORSE)
       {
-          Interact();
+         void Interact()
+         {
+           Debug.Log("Test2");
+         }
       }
       else if (WhichZooAnimal == PENGUIN)
       {
-          Interact();
+          void Interact()
+          {
+            Debug.Log("test3");
+          }
       }
       else if (WhichZooAnimal == GOAT)
       {
-          Interact();
+          void Interact()
+          {
+              Debug.Log("test4");
+          }
       }
         
         
