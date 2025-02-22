@@ -9,9 +9,15 @@ public class Movement
     public GameObject PENGUIN;
     float moveSpeed = 50.0f;
 
+    public string WhichZooAnimal;
+   
+}
 
 
 
+
+
+ }
     private bool canSelect = false;
     private IInteractable ChosenAnimal;
 
@@ -19,13 +25,13 @@ public class Movement
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
-        //     public string WhichZooAnimal;
+
         float dt = Time.deltaTime;
         Vector2 direction = Vector2.zero;
+
+
         if (Input.GetKey(KeyCode.W))
         {
             direction += Vector2.up;
@@ -43,8 +49,27 @@ public class Movement
             direction += Vector2.right;
         }
 
+
+        if (WhichZooAnimal == Camel)
+        {
+            interact();
+        }
+        else if (WhichZooAnimal == Horse)
+        {
+
+        }
+        else if (WhichZooAnimal == Penguin)
+        {
+
+        }
+        else if (WhichZooAnimal == Goat)
+        {
+
+        }
+
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
+
 
 
 
@@ -81,8 +106,7 @@ public class Movement
     }
 }
 
-
-
+        
 
 
 
