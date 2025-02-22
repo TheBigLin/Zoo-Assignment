@@ -7996,7 +7996,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2569574339175437700, guid: 4290cd0c4a48ae74bae090d05830e390, type: 3}
       propertyPath: m_LocalScale.x
-      value: 64.06927
+      value: -75.3
       objectReference: {fileID: 0}
     - target: {fileID: 2569574339175437700, guid: 4290cd0c4a48ae74bae090d05830e390, type: 3}
       propertyPath: m_LocalScale.y
@@ -8080,6 +8080,10 @@ PrefabInstance:
       value: ZOO_PENGUIN
       objectReference: {fileID: 0}
     - target: {fileID: 3750144373896125295, guid: 54119caaab31b4941a88dc3714f65795, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -95.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750144373896125295, guid: 54119caaab31b4941a88dc3714f65795, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.3
       objectReference: {fileID: 0}
@@ -8148,6 +8152,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 329681075}
     m_Modifications:
+    - target: {fileID: 2491352602867328232, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 80.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2491352602867328232, guid: 8112e6d6ab7c5e54cb1e874d0c1c38de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -8228,6 +8236,10 @@ PrefabInstance:
     - target: {fileID: 3772142862912653700, guid: 343953a1ac21aa641997562f5b8d06a1, type: 3}
       propertyPath: m_Name
       value: ZOO_HORSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035434707383043318, guid: 343953a1ac21aa641997562f5b8d06a1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -88.51
       objectReference: {fileID: 0}
     - target: {fileID: 4035434707383043318, guid: 343953a1ac21aa641997562f5b8d06a1, type: 3}
       propertyPath: m_LocalPosition.x
