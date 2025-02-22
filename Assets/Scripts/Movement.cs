@@ -3,10 +3,10 @@ using UnityEngine;
 public class Movement : IInteractable
 {
 
-    public GameObject ZOO_GOAT;
-    public GameObject ZOO_HORSE;
-    public GameObject ZOO_CAMEL;
-    public GameObject ZOO_PENGUIN;
+    public GameObject Goat;
+    public GameObject Horse;
+    public GameObject Camel;
+    public GameObject Penguin;
     float moveSpeed = 50.0f;
 
     public string WhichZooAnimal;
@@ -15,6 +15,7 @@ public class Movement : IInteractable
 
 
 
+   
 
     void Start()
     {
@@ -41,21 +42,21 @@ public class Movement : IInteractable
         }
 
 
-        if (WhichZooAnimal == Camel)
+        if (WhichZooAnimal == CAMEL)
         {
            Interact();
         }
-        else if (WhichZooAnimal == Horse)
+        else if (WhichZooAnimal == HORSE)
         {
-
+            Interact();
         }
-        else if (WhichZooAnimal == Penguin)
+        else if (WhichZooAnimal == PENGUIN)
         {
-
+            Interact();
         }
-        else if (WhichZooAnimal == Goat)
+        else if (WhichZooAnimal == GOAT)
         {
-
+            Interact();
         }
 
         Vector3 movement = direction * moveSpeed * dt;
