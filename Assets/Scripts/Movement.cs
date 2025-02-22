@@ -9,6 +9,9 @@ public class Movement
     public GameObject ZOO_PENGUIN;
     float moveSpeed = 50.0f;
 
+    public string WhichZooAnimal;
+   
+
 
 
     void Start()
