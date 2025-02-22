@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement 
+public class Movement
 {
 
     public GameObject ZOO_GOAT;
@@ -15,13 +15,9 @@ public class Movement
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
-            public string WhichZooAnimal;
-         float dt = Time.deltaTime;
-        Vector2 direction = Vector2.zero;
+
         if (Input.GetKey(KeyCode.W))
         {
             direction += Vector2.up;
@@ -39,34 +35,33 @@ public class Movement
             direction += Vector2.right;
         }
 
+
+        if (WhichZooAnimal == Camel)
+        {
+            interact();
+        }
+        else if (WhichZooAnimal == Horse)
+        {
+
+        }
+        else if (WhichZooAnimal == Penguin)
+        {
+
+        }
+        else if (WhichZooAnimal == Goat)
+        {
+
+        }
+
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
 
-
-    if (WhichZooAnimal == Camel);
-        {
-    interact()
+         public string WhichZooAnimal;
+         float dt = Time.deltaTime;
+         Vec2 direction = Vec2.zero;
     }
-    else if (WhichZooAnimal == Horse);
-    {
+} 
 
-    }
-     else if (WhichZooAnimal == Penguin);
-    {
-
-    }
-    else (WhichZooAnimal == Goat);
-    {
-
-    }
-
-
-
-
-
-
-    }
-}
 
       
 
