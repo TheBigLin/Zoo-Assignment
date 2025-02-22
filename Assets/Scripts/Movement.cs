@@ -19,8 +19,8 @@ public class Movement
     // Update is called once per frame
     void Update()
     {
-
-        float dt = Time.deltaTime;
+            public string WhichZooAnimal;
+         float dt = Time.deltaTime;
         Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
         {
@@ -42,7 +42,29 @@ public class Movement
         Vector3 movement = direction * moveSpeed * dt;
         transform.position += movement;
 
-    
+
+    if (WhichZooAnimal == Camel);
+        {
+    interact()
+    }
+    else if (WhichZooAnimal == Horse);
+    {
+
+    }
+     else if (WhichZooAnimal == Penguin);
+    {
+
+    }
+    else (WhichZooAnimal == Goat);
+    {
+
+    }
+
+
+
+
+
+
     }
 }
 
